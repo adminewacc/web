@@ -12,7 +12,7 @@ import { ClaudeApi } from "./platforms/anthropic";
 export const ROLES = ["system", "user", "assistant"] as const;
 export type MessageRole = (typeof ROLES)[number];
 
-export const Models = ["gemini-1.5-pro-latest", "gemini-1.0-pro-vision"] as const;
+export const Models = ["gemini-1.5-pro-latest", "gemini-pro-vision"] as const;
 export type ChatModel = ModelType;
 
 export interface MultimodalContent {
